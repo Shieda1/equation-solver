@@ -1,4 +1,4 @@
-// The squared quadratic
+// The quadratic equation
 
 let invalidInput = false;
 
