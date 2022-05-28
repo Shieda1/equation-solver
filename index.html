@@ -9,35 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="col-2 container mt-5">
-        <div class="input-group  mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">a = </span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="a">
-        </div>
+    <div class="form">
+        <form action="javascript:validate();" name="input_form">
+            a: <input type="text" name="a" size="5" required><br>
+            b: <input type="text" name="b" size="5" required><br>
+            c: <input type="text" name="c" size="5" required>
+            <br><br>
+            <input type="submit" value="calculate">
+        </form>
     </div>
-    
-    <div class="col-2 container">
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">b = </span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="b">
-        </div>
+    <button id="clearBtn">clear</button>
+    <div id="output">
+        <p id="output_text"></p>
     </div>
-
-    <div class="col-2 container">
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">c = </span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="c">
-        </div>
-    </div>
-    <div class="d-flex justify-content-center my-4">
-        <button id="calculateBtn" type="button" class="btn btn-outline-primary me-3">Calculate</button><br>
-        <button id="clearBtn" type="button" class="btn btn-outline-primary ms-3">Clear</button>
-    </div>
-    <div class="d-flex justify-content-center">
-        <label id="label" class="text-center"></label>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="quadraticEquation.js"></script>
+    <script src="quadraticFormula.js"></script>
 </body>
 </html>
