@@ -8,9 +8,6 @@ const decimalCount = num => {
     return 0;
  }
 
-
-
-
 function computeCuadrantFormula(operator) {
 
   let firstPart = (-1 * b) / (2 * a);
@@ -42,11 +39,7 @@ function validate() {
   a = input_forms[0].value;
   b = input_forms[1].value;
   c = input_forms[2].value;
-
-  console.log(input_forms.length)
-
   
-
   if(a == 0) {
     outputText = `<em>a</em> cannot equal zero!`;
   } else if(isNaN(a)) {
